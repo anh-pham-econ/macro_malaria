@@ -1,0 +1,1614 @@
+==== Starting replication ====
+Running data_processing.R ...
+
+==============================
+Table 1. Robust Coefficient Test (HC1 Clustered)
+==============================
+
+
+t test of coefficients:
+
+               Estimate Std. Error t value  Pr(>|t|)    
+k_log          0.498498   0.055539  8.9756 < 2.2e-16 ***
+employment_log 0.518864   0.095319  5.4434 5.811e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Warning: 24 parsing failures.
+row  col               expected                                                           actual         file
+  1 year no trailing characters 1974-999.9-999.9-999.9-999.9-999.9                               literal data
+  1 NA   13 columns             8 columns                                                        literal data
+  5 FEB  no trailing characters 20.7-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9 literal data
+  5 NA   13 columns             3 columns                                                        literal data
+ 36 MAY  no trailing characters 52.3-999.9-999.9-999.9-999.9-999.9-999.9                         literal data
+... .... ...................... ................................................................ ............
+See problems(...) for more details.
+
+Warning: 24 parsing failures.
+row  col               expected                                                            actual         file
+  1 year no trailing characters 1974-999.9-999.9-999.9-999.9-999.9                                literal data
+  1 NA   13 columns             8 columns                                                         literal data
+  5 FEB  no trailing characters -14.2-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9 literal data
+  5 NA   13 columns             3 columns                                                         literal data
+ 36 MAY  no trailing characters 9.6-999.9-999.9-999.9-999.9-999.9-999.9                           literal data
+... .... ...................... ................................................................. ............
+See problems(...) for more details.
+
+Warning: 24 parsing failures.
+row  col               expected                                                           actual         file
+  1 year no trailing characters 1974-999.9-999.9-999.9-999.9-999.9                               literal data
+  1 NA   13 columns             8 columns                                                        literal data
+  5 FEB  no trailing characters -0.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9-999.9 literal data
+  5 NA   13 columns             3 columns                                                        literal data
+ 36 MAY  no trailing characters 0.6-999.9-999.9-999.9-999.9-999.9-999.9                          literal data
+... .... ...................... ................................................................ ............
+See problems(...) for more details.
+
+
+==============================
+Table A3. Summary Statistics
+==============================
+
+                 Obs        Mean       Min          Max           SD   Within_SD  Between_SD
+rgdpna           618 255928.0488  385.5477 9163052.0000 1009964.2398 347511.9317 930695.1341
+rkna             618      0.7128    0.1647       1.3354       0.2465      0.2191      0.1208
+emp              618     22.2632    0.0430     497.6157      80.0157      4.1733     78.2138
+cpi              584      8.6963   -8.9747     255.3050      18.9552     15.8310     13.1363
+trade_openness   544     65.2696   15.2817     347.9965      36.1897     13.2499     46.2374
+agr_share        593     20.1652    0.9956      60.6099      10.8050      3.0191     10.7351
+edu              597     19.8019    0.7800      78.3200      18.5833      5.5369     17.7252
+case_incidence   618  19051.8755    4.2875   70979.3326   17372.3250   5838.4820  16637.8015
+results_weighted 618      0.0478    0.0000       0.1114       0.0325      0.0000      0.0330
+olr_o            618     43.5197   24.2750      57.2583       8.1692      8.1299      1.0892
+tfp              618  34468.8546 1972.9438  342866.4910   54551.2844   7172.5512  57619.5344
+Warning message:
+There was 1 warning in `mutate()`.
+ℹ In argument: `cpi_log = log(cpi)`.
+Caused by warning in `log()`:
+! NaNs produced 
+Running main_analysis.R ...
+
+==============================
+Table A2. List of malaria-endemic LLMICs included in the estimation 
+==============================
+
+               Country.Name Country.Code                     Region         IncomeGroup
+1                    Angola          AGO         Sub-Saharan Africa Lower middle income
+2                     Benin          BEN         Sub-Saharan Africa Lower middle income
+3                   Bolivia          BOL  Latin America & Caribbean Lower middle income
+4              Burkina Faso          BFA         Sub-Saharan Africa          Low income
+5                   Burundi          BDI         Sub-Saharan Africa          Low income
+6                  Cameroon          CMR         Sub-Saharan Africa Lower middle income
+7  Central African Republic          CAF         Sub-Saharan Africa          Low income
+8                      Chad          TCD         Sub-Saharan Africa          Low income
+9             Cote d'Ivoire          CIV         Sub-Saharan Africa Lower middle income
+10                 Djibouti          DJI Middle East & North Africa Lower middle income
+11                 Eswatini          SWZ         Sub-Saharan Africa Lower middle income
+12                   Guinea          GIN         Sub-Saharan Africa Lower middle income
+13                 Honduras          HND  Latin America & Caribbean Lower middle income
+14                    India          IND                 South Asia Lower middle income
+15                    Kenya          KEN         Sub-Saharan Africa Lower middle income
+16                  Lao PDR          LAO        East Asia & Pacific Lower middle income
+17               Mauritania          MRT         Sub-Saharan Africa Lower middle income
+18                Nicaragua          NIC  Latin America & Caribbean Lower middle income
+19                    Niger          NER         Sub-Saharan Africa          Low income
+20              Philippines          PHL        East Asia & Pacific Lower middle income
+21                   Rwanda          RWA         Sub-Saharan Africa          Low income
+22                  Senegal          SEN         Sub-Saharan Africa Lower middle income
+23             Sierra Leone          SLE         Sub-Saharan Africa          Low income
+24                Sri Lanka          LKA                 South Asia Lower middle income
+25                    Sudan          SDN         Sub-Saharan Africa          Low income
+26                 Tanzania          TZA         Sub-Saharan Africa Lower middle income
+27                     Togo          TGO         Sub-Saharan Africa          Low income
+28            Venezuela, RB          VEN  Latin America & Caribbean                    
+29                   Zambia          ZMB         Sub-Saharan Africa Lower middle income
+30                 Zimbabwe          ZWE         Sub-Saharan Africa Lower middle income
+
+==============================
+Table 2. FE 
+==============================
+
+
+t test of coefficients:
+
+                    Estimate Std. Error t value Pr(>|t|)    
+case_incidence_log -0.037461   0.012105 -3.0947 0.002102 ** 
+agr_share_log      -0.127697   0.034033 -3.7521 0.000200 ***
+trade_openness_log -0.053164   0.043548 -1.2208 0.222837    
+cpi_log            -0.023637   0.010031 -2.3565 0.018909 *  
+edu_log             0.050088   0.015894  3.1514 0.001741 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table 2. RE 
+==============================
+
+
+t test of coefficients:
+
+                    Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)        10.669206   0.295662 36.0858 < 2.2e-16 ***
+case_incidence_log -0.038700   0.012084 -3.2026 0.0014588 ** 
+agr_share_log      -0.126005   0.033346 -3.7787 0.0001789 ***
+trade_openness_log -0.053904   0.043319 -1.2443 0.2140199    
+cpi_log            -0.023434   0.010011 -2.3408 0.0196788 *  
+edu_log             0.051016   0.015854  3.2179 0.0013846 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table 2. 2SLS Lag IV 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  11.6773068  0.1391960  83.8911 < 2.2e-16 ***
+case_incidence_log                           -0.0391040  0.0071546  -5.4655 7.928e-08 ***
+agr_share_log                                -0.1267000  0.0252793  -5.0120 7.955e-07 ***
+trade_openness_log                           -0.0529780  0.0218071  -2.4294   0.01554 *  
+cpi_log                                      -0.0236334  0.0055529  -4.2560 2.569e-05 ***
+edu_log                                       0.0497829  0.0080665   6.1716 1.594e-09 ***
+factor(Country.Name)Benin                    -1.2411416  0.0504102 -24.6208 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.5929854  0.0451638 -13.1297 < 2.2e-16 ***
+factor(Country.Name)Burkina Faso             -1.1918125  0.0471077 -25.2997 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.3030953  0.0533981 -43.1306 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.6684936  0.0369014 -18.1157 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.5330255  0.0662676 -38.2242 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.4231550  0.0502668 -28.3120 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.4323435  0.0440714  -9.8101 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.3315985  0.0636891 -36.6091 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.3982992  0.0532840 -26.2424 < 2.2e-16 ***
+factor(Country.Name)Guinea                   -1.1530807  0.0426543 -27.0331 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -0.9382103  0.0535336 -17.5256 < 2.2e-16 ***
+factor(Country.Name)India                     1.5770546  0.0447533  35.2388 < 2.2e-16 ***
+factor(Country.Name)Kenya                    -0.2895461  0.0405693  -7.1371 4.216e-12 ***
+factor(Country.Name)Lao PDR                  -0.7999323  0.0471978 -16.9485 < 2.2e-16 ***
+factor(Country.Name)Mauritania               -0.9006079  0.0419958 -21.4452 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.1047332  0.0516808 -21.3761 < 2.2e-16 ***
+factor(Country.Name)Niger                    -1.7002628  0.0549339 -30.9511 < 2.2e-16 ***
+factor(Country.Name)Philippines               0.4249225  0.0542053   7.8391 3.771e-14 ***
+factor(Country.Name)Rwanda                   -1.4472970  0.0439682 -32.9169 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -0.9708866  0.0392064 -24.7635 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.5420387  0.0600657 -25.6725 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                 0.1968209  0.0633841   3.1052   0.00203 ** 
+factor(Country.Name)Sudan                    -0.0189824  0.0505790  -0.3753   0.70762    
+factor(Country.Name)Tanzania                 -0.6563846  0.0435654 -15.0666 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.8913142  0.0481059 -39.3156 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.6137030  0.0418954 -62.3865 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -0.9084094  0.0353124 -25.7249 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.2420886  0.0345556 -35.9446 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A5. Lag IV First stage 
+==============================
+
+
+Call:
+lm(formula = case_incidence_log ~ lag_case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name), 
+    data = tfp_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.18117 -0.07249  0.00057  0.07617  1.02983 
+
+Coefficients:
+                                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                   1.2302088  0.4204756   2.926  0.00362 ** 
+lag_case_incidence_log                        0.8763727  0.0237840  36.847  < 2e-16 ***
+agr_share_log                                 0.0237747  0.0784238   0.303  0.76192    
+trade_openness_log                            0.0034450  0.0643266   0.054  0.95732    
+cpi_log                                      -0.0227778  0.0158001  -1.442  0.15015    
+edu_log                                      -0.0006598  0.0292634  -0.023  0.98202    
+factor(Country.Name)Benin                     0.0009001  0.1460829   0.006  0.99509    
+factor(Country.Name)Bolivia                  -0.6369594  0.1457917  -4.369 1.57e-05 ***
+factor(Country.Name)Burkina Faso              0.0103839  0.1471343   0.071  0.94377    
+factor(Country.Name)Burundi                  -0.0643813  0.1683599  -0.382  0.70236    
+factor(Country.Name)Cameroon                 -0.0421602  0.1216586  -0.347  0.72911    
+factor(Country.Name)Central African Republic -0.0222244  0.1646967  -0.135  0.89272    
+factor(Country.Name)Chad                     -0.0605548  0.1522025  -0.398  0.69094    
+factor(Country.Name)Cote d'Ivoire            -0.0252693  0.1218303  -0.207  0.83579    
+factor(Country.Name)Djibouti                  0.1030190  0.1949955   0.528  0.59756    
+factor(Country.Name)Eswatini                 -0.7443145  0.1626535  -4.576 6.25e-06 ***
+factor(Country.Name)Guinea                    0.0457329  0.1192171   0.384  0.70146    
+factor(Country.Name)Honduras                 -0.9733156  0.1749931  -5.562 4.75e-08 ***
+factor(Country.Name)India                    -0.4535577  0.1423277  -3.187  0.00155 ** 
+factor(Country.Name)Kenya                    -0.2001943  0.1313496  -1.524  0.12823    
+factor(Country.Name)Lao PDR                  -0.4582913  0.1574027  -2.912  0.00379 ** 
+factor(Country.Name)Mauritania               -0.2459985  0.1315202  -1.870  0.06212 .  
+factor(Country.Name)Nicaragua                -0.6263032  0.1822874  -3.436  0.00065 ***
+factor(Country.Name)Niger                    -0.0239383  0.1826820  -0.131  0.89581    
+factor(Country.Name)Philippines              -0.8477831  0.1749694  -4.845 1.78e-06 ***
+factor(Country.Name)Rwanda                   -0.0080233  0.1486411  -0.054  0.95698    
+factor(Country.Name)Senegal                  -0.2413710  0.1262274  -1.912  0.05653 .  
+factor(Country.Name)Sierra Leone              0.0098852  0.1871863   0.053  0.95791    
+factor(Country.Name)Sri Lanka                -1.5802333  0.1756244  -8.998  < 2e-16 ***
+factor(Country.Name)Sudan                    -0.2258306  0.1648131  -1.370  0.17135    
+factor(Country.Name)Tanzania                 -0.1231092  0.1465120  -0.840  0.40124    
+factor(Country.Name)Togo                     -0.0290189  0.1277141  -0.227  0.82036    
+factor(Country.Name)Venezuela, RB            -0.3057243  0.1612363  -1.896  0.05863 .  
+factor(Country.Name)Zambia                   -0.0356836  0.0902099  -0.396  0.69263    
+factor(Country.Name)Zimbabwe                 -0.1475966  0.1247700  -1.183  0.23750    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2616 on 420 degrees of freedom
+  (163 observations deleted due to missingness)
+Multiple R-squared:  0.9873,	Adjusted R-squared:  0.9862 
+F-statistic: 957.3 on 34 and 420 DF,  p-value: < 2.2e-16
+
+F-statistic 
+[1] 318.9852
+Partial R-squared 
+[1] 0.763741
+
+==============================
+Table 2. 2SLS Shift-share IV 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  12.3568287  0.4060140  30.4345 < 2.2e-16 ***
+case_incidence_log                           -0.1155818  0.0415647  -2.7808  0.005667 ** 
+agr_share_log                                -0.0802865  0.0367211  -2.1864  0.029339 *  
+trade_openness_log                           -0.0442993  0.0224695  -1.9715  0.049318 *  
+cpi_log                                      -0.0234882  0.0056552  -4.1534 3.970e-05 ***
+edu_log                                       0.0355571  0.0114230   3.1128  0.001980 ** 
+factor(Country.Name)Benin                    -1.2608768  0.0508088 -24.8161 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.9256894  0.1809997  -5.1143 4.796e-07 ***
+factor(Country.Name)Burkina Faso             -1.2064991  0.0470355 -25.6508 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.3948846  0.0724662 -33.0483 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.6851819  0.0366997 -18.6700 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.5788265  0.0697212 -36.9877 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.5023303  0.0647979 -23.1849 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.4417102  0.0410688 -10.7554 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.4621840  0.1047894 -23.4965 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.8245295  0.2278538  -8.0075 1.161e-14 ***
+factor(Country.Name)Guinea                   -1.1672691  0.0402247 -29.0187 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -1.3783993  0.2393042  -5.7600 1.627e-08 ***
+factor(Country.Name)India                     1.3285738  0.1395147   9.5228 < 2.2e-16 ***
+factor(Country.Name)Kenya                    -0.3982671  0.0700776  -5.6832 2.475e-08 ***
+factor(Country.Name)Lao PDR                  -1.0637539  0.1468224  -7.2452 2.083e-12 ***
+factor(Country.Name)Mauritania               -1.0537886  0.0899553 -11.7146 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.5409548  0.2345672  -6.5694 1.498e-10 ***
+factor(Country.Name)Niger                    -1.7744360  0.0688526 -25.7715 < 2.2e-16 ***
+factor(Country.Name)Philippines              -0.0246765  0.2428082  -0.1016  0.919099    
+factor(Country.Name)Rwanda                   -1.5460413  0.0707947 -21.8384 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -1.0983477  0.0789628 -13.9097 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.5959197  0.0675709 -23.6185 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                -0.2378951  0.2427293  -0.9801  0.327609    
+factor(Country.Name)Sudan                    -0.1984218  0.1097071  -1.8087  0.071220 .  
+factor(Country.Name)Tanzania                 -0.7535596  0.0671600 -11.2204 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.9147831  0.0473951 -40.4004 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.8764431  0.1451316 -19.8195 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -0.9168762  0.0307310 -29.8355 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.3378484  0.0574634 -23.2818 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A5. Shift-share IV First stage 
+==============================
+
+
+Call:
+lm(formula = case_incidence_log ~ hbs_olr_o + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name), 
+    data = tfp_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3.00241 -0.20996 -0.01198  0.24310  2.47672 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                   9.640412   0.768103  12.551  < 2e-16 ***
+hbs_olr_o                                     0.102369   0.027792   3.683 0.000260 ***
+agr_share_log                                 0.572330   0.155816   3.673 0.000271 ***
+trade_openness_log                            0.168717   0.130975   1.288 0.198399    
+cpi_log                                       0.021589   0.032409   0.666 0.505676    
+edu_log                                      -0.177578   0.058418  -3.040 0.002516 ** 
+factor(Country.Name)Benin                    -0.195482   0.295947  -0.661 0.509276    
+factor(Country.Name)Bolivia                  -2.451489   0.557901  -4.394 1.41e-05 ***
+factor(Country.Name)Burkina Faso              0.021083   0.303293   0.070 0.944614    
+factor(Country.Name)Burundi                  -0.932637   0.342930  -2.720 0.006807 ** 
+factor(Country.Name)Cameroon                 -0.191985   0.246258  -0.780 0.436060    
+factor(Country.Name)Central African Republic -0.367420   0.337879  -1.087 0.277470    
+factor(Country.Name)Chad                     -0.678670   0.318570  -2.130 0.033722 *  
+factor(Country.Name)Cote d'Ivoire             0.007064   0.249130   0.028 0.977391    
+factor(Country.Name)Djibouti                 -0.245404   0.550962  -0.445 0.656253    
+factor(Country.Name)Eswatini                 -4.761516   0.294310 -16.179  < 2e-16 ***
+factor(Country.Name)Guinea                   -0.282135   0.242490  -1.163 0.245291    
+factor(Country.Name)Honduras                 -5.594565   0.241666 -23.150  < 2e-16 ***
+factor(Country.Name)India                    -2.763321   0.277214  -9.968  < 2e-16 ***
+factor(Country.Name)Kenya                    -0.859468   0.299205  -2.873 0.004279 ** 
+factor(Country.Name)Lao PDR                  -0.744946   0.783410  -0.951 0.342201    
+factor(Country.Name)Mauritania               -1.634267   0.267617  -6.107 2.32e-09 ***
+factor(Country.Name)Nicaragua                -5.459562   0.250568 -21.789  < 2e-16 ***
+factor(Country.Name)Niger                    -0.581146   0.381142  -1.525 0.128074    
+factor(Country.Name)Philippines              -2.507084   0.941800  -2.662 0.008066 ** 
+factor(Country.Name)Rwanda                   -0.880919   0.313084  -2.814 0.005128 ** 
+factor(Country.Name)Senegal                  -1.585847   0.244287  -6.492 2.40e-10 ***
+factor(Country.Name)Sierra Leone             -0.760307   0.377297  -2.015 0.044527 *  
+factor(Country.Name)Sri Lanka                -4.071846   0.516923  -7.877 2.90e-14 ***
+factor(Country.Name)Sudan                    -1.980890   0.328081  -6.038 3.44e-09 ***
+factor(Country.Name)Tanzania                 -1.082385   0.294362  -3.677 0.000267 ***
+factor(Country.Name)Togo                     -0.250534   0.258609  -0.969 0.333214    
+factor(Country.Name)Venezuela, RB            -2.724946   0.337970  -8.063 7.86e-15 ***
+factor(Country.Name)Zambia                   -0.126387   0.182668  -0.692 0.489388    
+factor(Country.Name)Zimbabwe                 -0.780450   0.276664  -2.821 0.005015 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5298 on 420 degrees of freedom
+  (163 observations deleted due to missingness)
+Multiple R-squared:  0.9478,	Adjusted R-squared:  0.9435 
+F-statistic: 224.1 on 34 and 420 DF,  p-value: < 2.2e-16
+
+F-statistic 
+[1] 11.22187
+Partial R-squared 
+[1] 0.03129358
+
+==============================
+Table A4. Concentration Measures of Exposure Components 
+==============================
+
+top_exposure_share       HHI_exposure effective_exposers         top1_share         top3_share 
+        0.06851302         0.04259435        23.47729016         0.06851302         0.19226148 
+        top5_share 
+        0.30402093 
+
+==============================
+Table A4. Concentration Measures of Share Components 
+==============================
+
+ top_shift_share        HHI_shift effective_shocks       top1_share       top3_share       top5_share 
+      0.06934058       0.05451301      18.34424355       0.06934058       0.20201714       0.32215972 
+
+==============================
+Table A6. Panel 2SLS Estimates of Malaria Impact on TFP using Combined instruments 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = tfp_log ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    hbs_olr_o + lag_case_incidence_log + log(olr_o) + agr_share_log + 
+        trade_openness_log + cpi_log + edu_log + factor(Country.Name), 
+    data = tfp_data)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.2447820 -0.0442530  0.0009082  0.0438723  0.2797187 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  11.687195   0.140213  83.353  < 2e-16 ***
+case_incidence_log                           -0.040217   0.007251  -5.546 5.17e-08 ***
+agr_share_log                                -0.126025   0.025243  -4.992 8.75e-07 ***
+trade_openness_log                           -0.052852   0.021778  -2.427  0.01565 *  
+cpi_log                                      -0.023631   0.005551  -4.257 2.55e-05 ***
+edu_log                                       0.049576   0.008068   6.145 1.86e-09 ***
+factor(Country.Name)Benin                    -1.241429   0.050343 -24.660  < 2e-16 ***
+factor(Country.Name)Bolivia                  -0.597827   0.045261 -13.208  < 2e-16 ***
+factor(Country.Name)Burkina Faso             -1.192026   0.047042 -25.340  < 2e-16 ***
+factor(Country.Name)Burundi                  -2.304431   0.053301 -43.235  < 2e-16 ***
+factor(Country.Name)Cameroon                 -0.668736   0.036841 -18.152  < 2e-16 ***
+factor(Country.Name)Central African Republic -2.533692   0.066196 -38.275  < 2e-16 ***
+factor(Country.Name)Chad                     -1.424307   0.050171 -28.389  < 2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.432480   0.043990  -9.831  < 2e-16 ***
+factor(Country.Name)Djibouti                 -2.333499   0.063797 -36.577  < 2e-16 ***
+factor(Country.Name)Eswatini                 -1.404501   0.053349 -26.327  < 2e-16 ***
+factor(Country.Name)Guinea                   -1.153287   0.042571 -27.091  < 2e-16 ***
+factor(Country.Name)Honduras                 -0.944616   0.053602 -17.623  < 2e-16 ***
+factor(Country.Name)India                     1.573439   0.044772  35.143  < 2e-16 ***
+factor(Country.Name)Kenya                    -0.291128   0.040484  -7.191 2.96e-12 ***
+factor(Country.Name)Lao PDR                  -0.803771   0.047106 -17.063  < 2e-16 ***
+factor(Country.Name)Mauritania               -0.902837   0.041885 -21.555  < 2e-16 ***
+factor(Country.Name)Nicaragua                -1.111081   0.051725 -21.480  < 2e-16 ***
+factor(Country.Name)Niger                    -1.701342   0.054861 -31.012  < 2e-16 ***
+factor(Country.Name)Philippines               0.418380   0.054511   7.675 1.17e-13 ***
+factor(Country.Name)Rwanda                   -1.448734   0.043903 -32.999  < 2e-16 ***
+factor(Country.Name)Senegal                  -0.972741   0.039183 -24.826  < 2e-16 ***
+factor(Country.Name)Sierra Leone             -1.542823   0.059969 -25.727  < 2e-16 ***
+factor(Country.Name)Sri Lanka                 0.190495   0.063746   2.988  0.00297 ** 
+factor(Country.Name)Sudan                    -0.021593   0.050545  -0.427  0.66944    
+factor(Country.Name)Tanzania                 -0.657799   0.043469 -15.133  < 2e-16 ***
+factor(Country.Name)Togo                     -1.891656   0.048029 -39.386  < 2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.617526   0.041947 -62.401  < 2e-16 ***
+factor(Country.Name)Zambia                   -0.908533   0.035227 -25.791  < 2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.243482   0.034447 -36.098  < 2e-16 ***
+
+Diagnostic tests:
+                 df1 df2 statistic p-value    
+Weak instruments   3 418   466.634  <2e-16 ***
+Wu-Hausman         1 419     0.487  0.4857    
+Sargan             2  NA     6.133  0.0466 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07969 on 420 degrees of freedom
+Multiple R-Squared: 0.9934,	Adjusted R-squared: 0.9928 
+Wald test:  3256 on 34 and 420 DF,  p-value: < 2.2e-16 
+
+
+==============================
+Table A17. Robustness of Malaria Impact on TFP to Alternative Factor Shares, Alpha = 0.35, Beta= 0.65 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = tfp_log_s1 ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    (hbs_olr_o) + agr_share_log + trade_openness_log + cpi_log + 
+        edu_log + factor(Country.Name), data = factor_shares_data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.291098 -0.058105 -0.002046  0.056589  0.339802 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  11.840585   0.463680  25.536  < 2e-16 ***
+case_incidence_log                           -0.120373   0.047371  -2.541  0.01141 *  
+agr_share_log                                -0.117209   0.040872  -2.868  0.00434 ** 
+trade_openness_log                           -0.009827   0.025808  -0.381  0.70355    
+cpi_log                                      -0.028700   0.006248  -4.593 5.77e-06 ***
+edu_log                                       0.078487   0.013207   5.943 5.89e-09 ***
+factor(Country.Name)Benin                    -1.009963   0.057309 -17.623  < 2e-16 ***
+factor(Country.Name)Bolivia                  -0.864638   0.206751  -4.182 3.52e-05 ***
+factor(Country.Name)Burkina Faso             -1.009982   0.055891 -18.070  < 2e-16 ***
+factor(Country.Name)Burundi                  -2.088426   0.083286 -25.075  < 2e-16 ***
+factor(Country.Name)Cameroon                 -0.574419   0.042812 -13.417  < 2e-16 ***
+factor(Country.Name)Central African Republic -2.164541   0.078042 -27.735  < 2e-16 ***
+factor(Country.Name)Chad                     -1.310766   0.074307 -17.640  < 2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.311766   0.046783  -6.664 8.38e-11 ***
+factor(Country.Name)Djibouti                 -2.106844   0.122780 -17.160  < 2e-16 ***
+factor(Country.Name)Eswatini                 -1.330177   0.259693  -5.122 4.61e-07 ***
+factor(Country.Name)Guinea                   -0.981981   0.042877 -22.902  < 2e-16 ***
+factor(Country.Name)Honduras                 -1.228739   0.272180  -4.514 8.26e-06 ***
+factor(Country.Name)India                     0.830710   0.160734   5.168 3.66e-07 ***
+factor(Country.Name)Kenya                    -0.441392   0.079840  -5.528 5.69e-08 ***
+factor(Country.Name)Lao PDR                  -0.935878   0.169445  -5.523 5.85e-08 ***
+factor(Country.Name)Mauritania               -0.657170   0.102112  -6.436 3.36e-10 ***
+factor(Country.Name)Nicaragua                -1.340415   0.267648  -5.008 8.11e-07 ***
+factor(Country.Name)Niger                    -1.520366   0.079583 -19.104  < 2e-16 ***
+factor(Country.Name)Philippines              -0.240731   0.277607  -0.867  0.38635    
+factor(Country.Name)Rwanda                   -1.374502   0.083976 -16.368  < 2e-16 ***
+factor(Country.Name)Senegal                  -0.910003   0.089717 -10.143  < 2e-16 ***
+factor(Country.Name)Sierra Leone             -1.270642   0.074963 -16.950  < 2e-16 ***
+factor(Country.Name)Sri Lanka                -0.273384   0.275288  -0.993  0.32124    
+factor(Country.Name)Sudan                    -0.061281   0.125989  -0.486  0.62694    
+factor(Country.Name)Tanzania                 -0.711782   0.077821  -9.146  < 2e-16 ***
+factor(Country.Name)Togo                     -1.652358   0.054739 -30.186  < 2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.892583   0.165565 -17.471  < 2e-16 ***
+factor(Country.Name)Zambia                   -0.770329   0.032474 -23.722  < 2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.201302   0.067639 -17.760  < 2e-16 ***
+
+Diagnostic tests:
+                 df1 df2 statistic p-value    
+Weak instruments   1 420    13.568 0.00026 ***
+Wu-Hausman         1 419     2.652 0.10414    
+Sargan             0  NA        NA      NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0994 on 420 degrees of freedom
+Multiple R-Squared: 0.9866,	Adjusted R-squared: 0.9855 
+Wald test:  1508 on 34 and 420 DF,  p-value: < 2.2e-16 
+
+
+==============================
+Table A17. Robustness of Malaria Impact on TFP to Alternative Factor Shares, Alpha = 0.30, Beta= 0.65 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = tfp_log_s2 ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    (hbs_olr_o) + agr_share_log + trade_openness_log + cpi_log + 
+        edu_log + factor(Country.Name), data = factor_shares_data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.301527 -0.063111  0.001402  0.058260  0.356663 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  11.822130   0.499977  23.645  < 2e-16 ***
+case_incidence_log                           -0.126915   0.051097  -2.484  0.01339 *  
+agr_share_log                                -0.135848   0.043704  -3.108  0.00201 ** 
+trade_openness_log                            0.001889   0.027716   0.068  0.94571    
+cpi_log                                      -0.031348   0.006693  -4.683 3.82e-06 ***
+edu_log                                       0.099690   0.014444   6.902 1.90e-11 ***
+factor(Country.Name)Benin                    -0.970100   0.062093 -15.623  < 2e-16 ***
+factor(Country.Name)Bolivia                  -0.917152   0.223318  -4.107 4.82e-05 ***
+factor(Country.Name)Burkina Faso             -0.959869   0.061348 -15.646  < 2e-16 ***
+factor(Country.Name)Burundi                  -2.018663   0.089986 -22.433  < 2e-16 ***
+factor(Country.Name)Cameroon                 -0.549212   0.046735 -11.752  < 2e-16 ***
+factor(Country.Name)Central African Republic -2.094301   0.083075 -25.210  < 2e-16 ***
+factor(Country.Name)Chad                     -1.277047   0.080374 -15.889  < 2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.288574   0.050504  -5.714 2.09e-08 ***
+factor(Country.Name)Djibouti                 -2.171766   0.134119 -16.193  < 2e-16 ***
+factor(Country.Name)Eswatini                 -1.362650   0.280168  -4.864 1.63e-06 ***
+factor(Country.Name)Guinea                   -0.958783   0.045789 -20.939  < 2e-16 ***
+factor(Country.Name)Honduras                 -1.268227   0.293357  -4.323 1.92e-05 ***
+factor(Country.Name)India                     0.810344   0.173843   4.661 4.23e-06 ***
+factor(Country.Name)Kenya                    -0.440162   0.086395  -5.095 5.29e-07 ***
+factor(Country.Name)Lao PDR                  -0.962255   0.183512  -5.244 2.50e-07 ***
+factor(Country.Name)Mauritania               -0.639992   0.110023  -5.817 1.19e-08 ***
+factor(Country.Name)Nicaragua                -1.375789   0.288803  -4.764 2.62e-06 ***
+factor(Country.Name)Niger                    -1.435155   0.086609 -16.571  < 2e-16 ***
+factor(Country.Name)Philippines              -0.302127   0.299888  -1.007  0.31429    
+factor(Country.Name)Rwanda                   -1.353359   0.091816 -14.740  < 2e-16 ***
+factor(Country.Name)Senegal                  -0.887825   0.096524  -9.198  < 2e-16 ***
+factor(Country.Name)Sierra Leone             -1.220149   0.080350 -15.186  < 2e-16 ***
+factor(Country.Name)Sri Lanka                -0.336500   0.296460  -1.135  0.25700    
+factor(Country.Name)Sudan                    -0.029877   0.136270  -0.219  0.82656    
+factor(Country.Name)Tanzania                 -0.664684   0.084602  -7.857 3.34e-14 ***
+factor(Country.Name)Togo                     -1.619819   0.059332 -27.301  < 2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.927906   0.178860 -16.370  < 2e-16 ***
+factor(Country.Name)Zambia                   -0.773896   0.034729 -22.284  < 2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.188519   0.074146 -16.029  < 2e-16 ***
+
+Diagnostic tests:
+                 df1 df2 statistic p-value    
+Weak instruments   1 420    13.568 0.00026 ***
+Wu-Hausman         1 419     2.372 0.12425    
+Sargan             0  NA        NA      NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1057 on 420 degrees of freedom
+Multiple R-Squared: 0.9849,	Adjusted R-squared: 0.9836 
+Wald test:  1336 on 34 and 420 DF,  p-value: < 2.2e-16 
+
+
+==============================
+Table A17. Robustness of Malaria Impact on TFP to Alternative Factor Shares, Alpha = 0.40, Beta= 0.65 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = tfp_log_s3 ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    (hbs_olr_o) + agr_share_log + trade_openness_log + cpi_log + 
+        edu_log + factor(Country.Name), data = factor_shares_data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.280670 -0.056658 -0.002583  0.051607  0.322940 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  11.859040   0.431168  27.504  < 2e-16 ***
+case_incidence_log                           -0.113831   0.044034  -2.585   0.0101 *  
+agr_share_log                                -0.098570   0.038447  -2.564   0.0107 *  
+trade_openness_log                           -0.021543   0.024169  -0.891   0.3733    
+cpi_log                                      -0.026052   0.005855  -4.450 1.10e-05 ***
+edu_log                                       0.057284   0.012211   4.691 3.68e-06 ***
+factor(Country.Name)Benin                    -1.049826   0.053198 -19.734  < 2e-16 ***
+factor(Country.Name)Bolivia                  -0.812124   0.192066  -4.228 2.89e-05 ***
+factor(Country.Name)Burkina Faso             -1.060094   0.051178 -20.714  < 2e-16 ***
+factor(Country.Name)Burundi                  -2.158189   0.077556 -27.827  < 2e-16 ***
+factor(Country.Name)Cameroon                 -0.599626   0.039606 -15.140  < 2e-16 ***
+factor(Country.Name)Central African Republic -2.234782   0.073688 -30.328  < 2e-16 ***
+factor(Country.Name)Chad                     -1.344485   0.069125 -19.450  < 2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.334958   0.043664  -7.671 1.20e-13 ***
+factor(Country.Name)Djibouti                 -2.041923   0.112337 -18.177  < 2e-16 ***
+factor(Country.Name)Eswatini                 -1.297705   0.241565  -5.372 1.29e-07 ***
+factor(Country.Name)Guinea                   -1.005178   0.040681 -24.709  < 2e-16 ***
+factor(Country.Name)Honduras                 -1.189250   0.253402  -4.693 3.65e-06 ***
+factor(Country.Name)India                     0.851076   0.149127   5.707 2.17e-08 ***
+factor(Country.Name)Kenya                    -0.442621   0.074296  -5.958 5.42e-09 ***
+factor(Country.Name)Lao PDR                  -0.909502   0.157016  -5.792 1.36e-08 ***
+factor(Country.Name)Mauritania               -0.674349   0.095228  -7.081 6.04e-12 ***
+factor(Country.Name)Nicaragua                -1.305042   0.248913  -5.243 2.51e-07 ***
+factor(Country.Name)Niger                    -1.605577   0.073501 -21.844  < 2e-16 ***
+factor(Country.Name)Philippines              -0.179335   0.257831  -0.696   0.4871    
+factor(Country.Name)Rwanda                   -1.395645   0.077042 -18.115  < 2e-16 ***
+factor(Country.Name)Senegal                  -0.932181   0.083930 -11.107  < 2e-16 ***
+factor(Country.Name)Sierra Leone             -1.321135   0.070589 -18.716  < 2e-16 ***
+factor(Country.Name)Sri Lanka                -0.210269   0.256439  -0.820   0.4127    
+factor(Country.Name)Sudan                    -0.092685   0.116982  -0.792   0.4286    
+factor(Country.Name)Tanzania                 -0.758879   0.071977 -10.543  < 2e-16 ***
+factor(Country.Name)Togo                     -1.684898   0.050828 -33.149  < 2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.857260   0.153794 -18.578  < 2e-16 ***
+factor(Country.Name)Zambia                   -0.766762   0.030750 -24.935  < 2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.214086   0.061980 -19.588  < 2e-16 ***
+
+Diagnostic tests:
+                 df1 df2 statistic p-value    
+Weak instruments   1 420    13.568 0.00026 ***
+Wu-Hausman         1 419     2.928 0.08782 .  
+Sargan             0  NA        NA      NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.094 on 420 degrees of freedom
+Multiple R-Squared: 0.988,	Adjusted R-squared: 0.9871 
+Wald test:  1693 on 34 and 420 DF,  p-value: < 2.2e-16 
+
+
+==============================
+Table A16. Correlation Matrix of TFP Measures under Alternative Factor Shares 
+==============================
+
+           tfp_log tfp_log_s1 tfp_log_s2 tfp_log_s3
+tfp_log     1.0000     0.9837     0.9821     0.9848
+tfp_log_s1  0.9837     1.0000     0.9998     0.9998
+tfp_log_s2  0.9821     0.9998     1.0000     0.9990
+tfp_log_s3  0.9848     0.9998     0.9990     1.0000
+Running A7_robustness_WDI_data_analysis.R ...
+
+==============================
+Table A7. Unbalanced Panel Estimates of Malaria Impact on TFP using WDI data 
+==============================
+
+
+==============================
+Table A7. FE 
+==============================
+
+
+t test of coefficients:
+
+                     Estimate Std. Error t value Pr(>|t|)   
+case_incidence_log -0.0370914  0.0128793 -2.8799 0.004115 **
+agr_share_log      -0.0999805  0.0707698 -1.4128 0.158229   
+trade_openness_log -0.0201031  0.0375614 -0.5352 0.592700   
+cpi_log            -0.0057515  0.0056826 -1.0121 0.311866   
+edu_log             0.0307297  0.0161451  1.9033 0.057458 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A7. RE 
+==============================
+
+
+t test of coefficients:
+
+                     Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)         6.0315228  0.2553556 23.6201 < 2.2e-16 ***
+case_incidence_log -0.0367024  0.0120182 -3.0539  0.002349 ** 
+agr_share_log      -0.0917033  0.0643668 -1.4247  0.154714    
+trade_openness_log -0.0219506  0.0369328 -0.5943  0.552489    
+cpi_log            -0.0052784  0.0055238 -0.9556  0.339635    
+edu_log             0.0330023  0.0159281  2.0720  0.038655 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A7. 2SLS Lag IV 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                   5.4855739  0.1204235  45.5524 < 2.2e-16 ***
+case_incidence_log                           -0.0465610  0.0076996  -6.0472 2.548e-09 ***
+agr_share_log                                -0.0862559  0.0315132  -2.7371 0.0063754 ** 
+trade_openness_log                           -0.0189634  0.0209936  -0.9033 0.3667189    
+cpi_log                                      -0.0061090  0.0036671  -1.6659 0.0962363 .  
+edu_log                                       0.0279890  0.0083039   3.3706 0.0007967 ***
+factor(Country.Name)Angola                    0.9723123  0.0896175  10.8496 < 2.2e-16 ***
+factor(Country.Name)Bangladesh                0.7347446  0.0484960  15.1506 < 2.2e-16 ***
+factor(Country.Name)Benin                     0.7425785  0.0769355   9.6520 < 2.2e-16 ***
+factor(Country.Name)Bhutan                    0.7820394  0.0477964  16.3619 < 2.2e-16 ***
+factor(Country.Name)Bolivia                   0.8630809  0.0536425  16.0895 < 2.2e-16 ***
+factor(Country.Name)Burkina Faso              0.8110514  0.0777317  10.4340 < 2.2e-16 ***
+factor(Country.Name)Burundi                   0.4888220  0.0746040   6.5522 1.193e-10 ***
+factor(Country.Name)Cambodia                  1.0685634  0.0608329  17.5655 < 2.2e-16 ***
+factor(Country.Name)Cameroon                  0.7803999  0.0782373   9.9748 < 2.2e-16 ***
+factor(Country.Name)Central African Republic  0.5092554  0.1054547   4.8291 1.729e-06 ***
+factor(Country.Name)Chad                     -1.1880427  0.0766033 -15.5090 < 2.2e-16 ***
+factor(Country.Name)Comoros                   0.6198451  0.0637999   9.7155 < 2.2e-16 ***
+factor(Country.Name)Congo, Dem. Rep.          0.5062492  0.0795458   6.3642 3.817e-10 ***
+factor(Country.Name)Congo, Rep.               0.2393656  0.0955956   2.5039 0.0125377 *  
+factor(Country.Name)Cote d'Ivoire             0.9800908  0.0796217  12.3093 < 2.2e-16 ***
+factor(Country.Name)Djibouti                  0.1537640  0.1148784   1.3385 0.1812263    
+factor(Country.Name)Eswatini                  0.3133177  0.0461559   6.7883 2.660e-11 ***
+factor(Country.Name)Ethiopia                  0.7875815  0.0723612  10.8840 < 2.2e-16 ***
+factor(Country.Name)Gambia, The               0.8476603  0.0843308  10.0516 < 2.2e-16 ***
+factor(Country.Name)Ghana                     0.3804504  0.0857809   4.4351 1.089e-05 ***
+factor(Country.Name)Guinea                    0.7875617  0.0799717   9.8480 < 2.2e-16 ***
+factor(Country.Name)Haiti                    -0.2824431  0.0504776  -5.5954 3.306e-08 ***
+factor(Country.Name)Honduras                  0.4690023  0.0457187  10.2584 < 2.2e-16 ***
+factor(Country.Name)India                     0.7618066  0.0609430  12.5003 < 2.2e-16 ***
+factor(Country.Name)Kenya                     0.9422142  0.0702693  13.4086 < 2.2e-16 ***
+factor(Country.Name)Lao PDR                   1.1626214  0.0560343  20.7484 < 2.2e-16 ***
+factor(Country.Name)Madagascar                0.5251054  0.0639402   8.2124 1.263e-15 ***
+factor(Country.Name)Mali                      0.8772565  0.0757278  11.5843 < 2.2e-16 ***
+factor(Country.Name)Mauritania                0.8214419  0.0669098  12.2768 < 2.2e-16 ***
+factor(Country.Name)Nepal                     0.4199013  0.0406417  10.3318 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                 0.4370952  0.0468855   9.3226 < 2.2e-16 ***
+factor(Country.Name)Niger                     0.4663206  0.0752527   6.1967 1.051e-09 ***
+factor(Country.Name)Pakistan                  0.7812549  0.0519050  15.0516 < 2.2e-16 ***
+factor(Country.Name)Philippines               0.7796813  0.0410964  18.9720 < 2.2e-16 ***
+factor(Country.Name)Rwanda                    0.5953583  0.0702110   8.4796 < 2.2e-16 ***
+factor(Country.Name)Senegal                   0.5273342  0.0681772   7.7348 4.211e-14 ***
+factor(Country.Name)Sierra Leone              0.9056506  0.0852414  10.6245 < 2.2e-16 ***
+factor(Country.Name)Sudan                     1.2150031  0.0956630  12.7009 < 2.2e-16 ***
+factor(Country.Name)Tanzania                  0.6506095  0.0702855   9.2567 < 2.2e-16 ***
+factor(Country.Name)Togo                      0.1493327  0.0778154   1.9191 0.0554352 .  
+factor(Country.Name)Uganda                    0.6890008  0.0783709   8.7915 < 2.2e-16 ***
+factor(Country.Name)Vanuatu                   0.7035928  0.0799027   8.8056 < 2.2e-16 ***
+factor(Country.Name)Viet Nam                  0.9201422  0.0347367  26.4891 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                  0.8447948  0.0808475  10.4492 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A7. 2SLS Shift-share IV 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)                                   5.4029711  0.1764820 30.6149 < 2.2e-16 ***
+case_incidence_log                           -0.0686490  0.0393997 -1.7424 0.0819392 .  
+agr_share_log                                -0.0542424  0.0650258 -0.8342 0.4045079    
+trade_openness_log                           -0.0163052  0.0207813 -0.7846 0.4329808    
+cpi_log                                      -0.0069428  0.0043095 -1.6111 0.1076726    
+edu_log                                       0.0215961  0.0143478  1.5052 0.1327874    
+factor(Country.Name)Angola                    1.2245180  0.4513088  2.7133 0.0068476 ** 
+factor(Country.Name)Bangladesh                0.8660832  0.2322695  3.7288 0.0002100 ***
+factor(Country.Name)Benin                     0.9592788  0.3837104  2.5000 0.0126763 *  
+factor(Country.Name)Bhutan                    0.9033922  0.2187398  4.1300 4.125e-05 ***
+factor(Country.Name)Bolivia                   1.0109594  0.2638743  3.8312 0.0001405 ***
+factor(Country.Name)Burkina Faso              1.0296350  0.3869793  2.6607 0.0079997 ** 
+factor(Country.Name)Burundi                   0.6783133  0.3380328  2.0066 0.0452207 *  
+factor(Country.Name)Cambodia                  1.2213729  0.2750663  4.4403 1.064e-05 ***
+factor(Country.Name)Cameroon                  1.0075171  0.4024083  2.5037 0.0125454 *  
+factor(Country.Name)Central African Republic  0.7141683  0.3786908  1.8859 0.0597773 .  
+factor(Country.Name)Chad                     -0.9871413  0.3573590 -2.7623 0.0059093 ** 
+factor(Country.Name)Comoros                   0.7885540  0.2986399  2.6405 0.0084872 ** 
+factor(Country.Name)Congo, Dem. Rep.          0.7315514  0.4017803  1.8208 0.0691230 .  
+factor(Country.Name)Congo, Rep.               0.4955296  0.4606454  1.0757 0.2824670    
+factor(Country.Name)Cote d'Ivoire             1.2082767  0.4047423  2.9853 0.0029447 ** 
+factor(Country.Name)Djibouti                  0.3967675  0.4446132  0.8924 0.3725312    
+factor(Country.Name)Eswatini                  0.4346448  0.2205691  1.9706 0.0492186 *  
+factor(Country.Name)Ethiopia                  0.9704691  0.3259641  2.9772 0.0030222 ** 
+factor(Country.Name)Gambia, The               1.0533553  0.3650560  2.8855 0.0040443 ** 
+factor(Country.Name)Ghana                     0.5986646  0.3926969  1.5245 0.1278949    
+factor(Country.Name)Guinea                    1.0153191  0.4071191  2.4939 0.0128938 *  
+factor(Country.Name)Haiti                    -0.1427987  0.2476544 -0.5766 0.5644159    
+factor(Country.Name)Honduras                  0.5828988  0.2074462  2.8099 0.0051124 ** 
+factor(Country.Name)India                     0.9245194  0.2893452  3.1952 0.0014682 ** 
+factor(Country.Name)Kenya                     1.1420554  0.3558403  3.2095 0.0013985 ** 
+factor(Country.Name)Lao PDR                   1.3135861  0.2703729  4.8584 1.500e-06 ***
+factor(Country.Name)Madagascar                0.6934119  0.3009565  2.3040 0.0215509 *  
+factor(Country.Name)Mali                      1.0835905  0.3665110  2.9565 0.0032298 ** 
+factor(Country.Name)Mauritania                1.0068684  0.3315308  3.0370 0.0024896 ** 
+factor(Country.Name)Nepal                     0.4793913  0.1094470  4.3801 1.392e-05 ***
+factor(Country.Name)Nicaragua                 0.5469459  0.2009020  2.7225 0.0066622 ** 
+factor(Country.Name)Niger                     0.6567623  0.3364723  1.9519 0.0513992 .  
+factor(Country.Name)Pakistan                  0.9135809  0.2339927  3.9043 0.0001049 ***
+factor(Country.Name)Philippines               0.8917046  0.2005484  4.4463 1.035e-05 ***
+factor(Country.Name)Rwanda                    0.7897674  0.3449334  2.2896 0.0223783 *  
+factor(Country.Name)Senegal                   0.7237845  0.3483865  2.0775 0.0381634 *  
+factor(Country.Name)Sierra Leone              1.1016232  0.3508728  3.1397 0.0017718 ** 
+factor(Country.Name)Sudan                     1.3985032  0.3332303  4.1968 3.103e-05 ***
+factor(Country.Name)Tanzania                  0.8450750  0.3449090  2.4501 0.0145555 *  
+factor(Country.Name)Togo                      0.3710730  0.3945645  0.9405 0.3473468    
+factor(Country.Name)Uganda                    0.9083933  0.3899577  2.3295 0.0201546 *  
+factor(Country.Name)Vanuatu                   0.8943353  0.3465725  2.5805 0.0100941 *  
+factor(Country.Name)Viet Nam                  0.9926723  0.1342420  7.3946 4.619e-13 ***
+factor(Country.Name)Zimbabwe                  1.0630989  0.3884498  2.7368 0.0063824 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Warning messages:
+1: There were 2 warnings in `mutate()`.
+The first warning was:
+ℹ In argument: `k_log = log(capital/population)`.
+Caused by warning in `log()`:
+! NaNs produced
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning. 
+2: Expected 2 pieces. Additional pieces discarded in 40 rows [514, 515, 516, 517, 518, 519, 520, 521, 522,
+523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, ...]. 
+3: There was 1 warning in `mutate()`.
+ℹ In argument: `year = as.integer(year)`.
+Caused by warning:
+! NAs introduced by coercion 
+Running A8_A15_robustness_output_per_labour_auxiliary_check.R ...
+
+==============================
+Table A8. Alternative Productivity Measure Y/L 
+==============================
+
+
+==============================
+Table A8. FE 
+==============================
+
+
+t test of coefficients:
+
+                    Estimate Std. Error t value  Pr(>|t|)    
+case_incidence_log -0.102458   0.040154 -2.5516   0.01108 *  
+agr_share_log      -0.307971   0.129180 -2.3841   0.01757 *  
+trade_openness_log  0.076998   0.106930  0.7201   0.47188    
+cpi_log            -0.043762   0.019978 -2.1905   0.02903 *  
+edu_log             0.217393   0.048329  4.4982 8.882e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A8. RE 
+==============================
+
+
+t test of coefficients:
+
+                    Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)         9.944232   0.574348 17.3139 < 2.2e-16 ***
+case_incidence_log -0.104226   0.034137 -3.0532  0.002399 ** 
+agr_share_log      -0.302944   0.109382 -2.7696  0.005845 ** 
+trade_openness_log  0.066953   0.101966  0.6566  0.511763    
+cpi_log            -0.041586   0.019653 -2.1160  0.034892 *  
+edu_log             0.221368   0.047598  4.6508 4.356e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A8. 2SLS Lag IV 
+==============================
+
+
+t test of coefficients:
+
+                                              Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)                                  10.253827   0.363369 28.2188 < 2.2e-16 ***
+case_incidence_log                           -0.120856   0.021867 -5.5268 5.734e-08 ***
+agr_share_log                                -0.296806   0.067694 -4.3845 1.471e-05 ***
+trade_openness_log                            0.079086   0.051856  1.5251 0.1279843    
+cpi_log                                      -0.043727   0.012300 -3.5550 0.0004209 ***
+edu_log                                       0.213971   0.021775  9.8265 < 2.2e-16 ***
+factor(Country.Name)Benin                     0.036275   0.139746  0.2596 0.7953152    
+factor(Country.Name)Bolivia                  -0.621098   0.148426 -4.1846 3.481e-05 ***
+factor(Country.Name)Burkina Faso             -0.091391   0.138165 -0.6615 0.5086813    
+factor(Country.Name)Burundi                  -0.898401   0.161320 -5.5691 4.579e-08 ***
+factor(Country.Name)Cameroon                 -0.018250   0.121512 -0.1502 0.8806838    
+factor(Country.Name)Central African Republic -0.752405   0.157764 -4.7692 2.556e-06 ***
+factor(Country.Name)Chad                     -0.356965   0.143707 -2.4840 0.0133810 *  
+factor(Country.Name)Cote d'Ivoire             0.314944   0.125728  2.5050 0.0126244 *  
+factor(Country.Name)Djibouti                 -0.909401   0.197411 -4.6066 5.434e-06 ***
+factor(Country.Name)Eswatini                  0.435260   0.161615  2.6932 0.0073606 ** 
+factor(Country.Name)Guinea                   -0.156059   0.123628 -1.2623 0.2075316    
+factor(Country.Name)Honduras                 -0.613974   0.167884 -3.6571 0.0002874 ***
+factor(Country.Name)India                    -0.190758   0.152491 -1.2509 0.2116509    
+factor(Country.Name)Kenya                    -0.461122   0.136995 -3.3660 0.0008329 ***
+factor(Country.Name)Lao PDR                  -0.309377   0.165120 -1.8737 0.0616720 .  
+factor(Country.Name)Mauritania                0.576988   0.129779  4.4459 1.122e-05 ***
+factor(Country.Name)Nicaragua                -0.448721   0.168819 -2.6580 0.0081608 ** 
+factor(Country.Name)Niger                    -0.333700   0.161838 -2.0619 0.0398288 *  
+factor(Country.Name)Philippines              -0.521238   0.170163 -3.0632 0.0023310 ** 
+factor(Country.Name)Rwanda                   -0.508306   0.149690 -3.3957 0.0007496 ***
+factor(Country.Name)Senegal                  -0.021048   0.126145 -0.1669 0.8675633    
+factor(Country.Name)Sierra Leone             -0.069180   0.176788 -0.3913 0.6957608    
+factor(Country.Name)Sri Lanka                -0.151155   0.194505 -0.7771 0.4375232    
+factor(Country.Name)Sudan                     0.614415   0.164151  3.7430 0.0002072 ***
+factor(Country.Name)Tanzania                 -0.151289   0.146240 -1.0345 0.3014873    
+factor(Country.Name)Togo                     -0.539875   0.132097 -4.0869 5.238e-05 ***
+factor(Country.Name)Venezuela, RB             0.559811   0.147639  3.7918 0.0001715 ***
+factor(Country.Name)Zambia                   -0.162212   0.113196 -1.4330 0.1525966    
+factor(Country.Name)Zimbabwe                 -0.647756   0.113064 -5.7291 1.928e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A8. 2SLS Shift-share IV 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)                                  11.4349397  1.0606307 10.7813 < 2.2e-16 ***
+case_incidence_log                           -0.2537862  0.1090648 -2.3269 0.0204437 *  
+agr_share_log                                -0.2161319  0.0938819 -2.3022 0.0218141 *  
+trade_openness_log                            0.0941704  0.0545247  1.7271 0.0848826 .  
+cpi_log                                      -0.0434746  0.0123883 -3.5093 0.0004978 ***
+edu_log                                       0.1892444  0.0295813  6.3974 4.221e-10 ***
+factor(Country.Name)Benin                     0.0019727  0.1355323  0.0146 0.9883941    
+factor(Country.Name)Bolivia                  -1.1993887  0.4768670 -2.5151 0.0122708 *  
+factor(Country.Name)Burkina Faso             -0.1169179  0.1331950 -0.8778 0.3805565    
+factor(Country.Name)Burundi                  -1.0579446  0.1968086 -5.3755 1.269e-07 ***
+factor(Country.Name)Cameroon                 -0.0472572  0.1159929 -0.4074 0.6839113    
+factor(Country.Name)Central African Republic -0.8320140  0.1625122 -5.1197 4.669e-07 ***
+factor(Country.Name)Chad                     -0.4945841  0.1772224 -2.7908 0.0054982 ** 
+factor(Country.Name)Cote d'Ivoire             0.2986628  0.1178916  2.5334 0.0116600 *  
+factor(Country.Name)Djibouti                 -1.1363780  0.2861387 -3.9714 8.405e-05 ***
+factor(Country.Name)Eswatini                 -0.3055933  0.5966896 -0.5121 0.6088167    
+factor(Country.Name)Guinea                   -0.1807207  0.1159927 -1.5580 0.1199782    
+factor(Country.Name)Honduras                 -1.3790894  0.6214738 -2.2191 0.0270162 *  
+factor(Country.Name)India                    -0.6226553  0.3698679 -1.6835 0.0930305 .  
+factor(Country.Name)Kenya                    -0.6500956  0.1912561 -3.3991 0.0007407 ***
+factor(Country.Name)Lao PDR                  -0.7679397  0.3990723 -1.9243 0.0549908 .  
+factor(Country.Name)Mauritania                0.3107369  0.2340240  1.3278 0.1849656    
+factor(Country.Name)Nicaragua                -1.2069403  0.6147696 -1.9632 0.0502777 .  
+factor(Country.Name)Niger                    -0.4626243  0.1849434 -2.5014 0.0127486 *  
+factor(Country.Name)Philippines              -1.3027092  0.6360586 -2.0481 0.0411719 *  
+factor(Country.Name)Rwanda                   -0.6799386  0.2001620 -3.3969 0.0007464 ***
+factor(Country.Name)Senegal                  -0.2425949  0.2091340 -1.1600 0.2467088    
+factor(Country.Name)Sierra Leone             -0.1628335  0.1827104 -0.8912 0.3733263    
+factor(Country.Name)Sri Lanka                -0.9067573  0.6286066 -1.4425 0.1499101    
+factor(Country.Name)Sudan                     0.3025224  0.2920413  1.0359 0.3008499    
+factor(Country.Name)Tanzania                 -0.3201939  0.1879503 -1.7036 0.0891937 .  
+factor(Country.Name)Togo                     -0.5806674  0.1280434 -4.5349 7.528e-06 ***
+factor(Country.Name)Venezuela, RB             0.1031289  0.3855020  0.2675 0.7892012    
+factor(Country.Name)Zambia                   -0.1769284  0.1019243 -1.7359 0.0833184 .  
+factor(Country.Name)Zimbabwe                 -0.8142014  0.1612889 -5.0481 6.661e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+
+====Auxiliary check===========
+Table A15. Unbalanced Panel Estimates of Malaria Impact on Capital stocks 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = k_log ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    (hbs_olr_o) + agr_share_log + trade_openness_log + cpi_log + 
+        edu_log + factor(Country.Name), data = tfp_data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.694113 -0.147585 -0.004366  0.133238  0.653756 
+
+Coefficients:
+                                             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  -0.36910    1.07410  -0.344 0.731290    
+case_incidence_log                           -0.13084    0.11557  -1.132 0.258203    
+agr_share_log                                -0.37278    0.09645  -3.865 0.000129 ***
+trade_openness_log                            0.23432    0.05692   4.117 4.63e-05 ***
+cpi_log                                      -0.05295    0.01361  -3.891 0.000116 ***
+edu_log                                       0.42406    0.03286  12.906  < 2e-16 ***
+factor(Country.Name)Benin                     0.79726    0.12926   6.168 1.63e-09 ***
+factor(Country.Name)Bolivia                  -1.05028    0.51089  -2.056 0.040420 *  
+factor(Country.Name)Burkina Faso              1.00226    0.12867   7.790 5.31e-14 ***
+factor(Country.Name)Burundi                   1.39526    0.19898   7.012 9.43e-12 ***
+factor(Country.Name)Cameroon                  0.50414    0.10778   4.678 3.92e-06 ***
+factor(Country.Name)Central African Republic  1.40481    0.15736   8.927  < 2e-16 ***
+factor(Country.Name)Chad                      0.67438    0.17609   3.830 0.000148 ***
+factor(Country.Name)Cote d'Ivoire             0.46385    0.10594   4.378 1.51e-05 ***
+factor(Country.Name)Djibouti                 -1.29843    0.25573  -5.077 5.76e-07 ***
+factor(Country.Name)Eswatini                 -0.64945    0.64941  -1.000 0.317859    
+factor(Country.Name)Guinea                    0.46396    0.10483   4.426 1.23e-05 ***
+factor(Country.Name)Honduras                 -0.78977    0.67283  -1.174 0.241136    
+factor(Country.Name)India                    -0.40732    0.38957  -1.046 0.296364    
+factor(Country.Name)Kenya                     0.02459    0.19747   0.125 0.900957    
+factor(Country.Name)Lao PDR                  -0.52753    0.41527  -1.270 0.204669    
+factor(Country.Name)Mauritania                0.34357    0.25445   1.350 0.177654    
+factor(Country.Name)Nicaragua                -0.70747    0.66716  -1.060 0.289560    
+factor(Country.Name)Niger                     1.70422    0.19201   8.876  < 2e-16 ***
+factor(Country.Name)Philippines              -1.22792    0.68591  -1.790 0.074142 .  
+factor(Country.Name)Rwanda                    0.42286    0.19437   2.176 0.030148 *  
+factor(Country.Name)Senegal                   0.44356    0.21869   2.028 0.043162 *  
+factor(Country.Name)Sierra Leone              1.00986    0.17995   5.612 3.64e-08 ***
+factor(Country.Name)Sri Lanka                -1.26231    0.66725  -1.892 0.059206 .  
+factor(Country.Name)Sudan                     0.62808    0.30207   2.079 0.038201 *  
+factor(Country.Name)Tanzania                  0.94195    0.19181   4.911 1.30e-06 ***
+factor(Country.Name)Togo                      0.65079    0.11547   5.636 3.20e-08 ***
+factor(Country.Name)Venezuela, RB            -0.70646    0.41423  -1.705 0.088844 .  
+factor(Country.Name)Zambia                   -0.07134    0.07878  -0.905 0.365737    
+factor(Country.Name)Zimbabwe                  0.25567    0.17843   1.433 0.152642    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2255 on 420 degrees of freedom
+Multiple R-Squared: 0.6768,	Adjusted R-squared: 0.6506 
+Wald test: 25.11 on 34 and 420 DF,  p-value: < 2.2e-16 
+
+Running A9_robustness_dengue.R ...
+
+==============================
+Table A9. Unbalanced Panel Estimates of Dengue Impact on TFP 
+==============================
+
+
+==============================
+Table A9. First stage Estimates of HbS frequency on Dengue 
+==============================
+
+Pooling Model
+
+Call:
+plm(formula = dengue_cases_log ~ results_weighted + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log, data = dengue_shift_share_pdata, 
+    model = "pooling")
+
+Unbalanced Panel: n = 31, T = 1-20, N = 505
+
+Residuals:
+    Min.  1st Qu.   Median  3rd Qu.     Max. 
+-7.49785 -1.15924  0.28362  1.53890  5.44655 
+
+Coefficients:
+                   Estimate Std. Error t-value  Pr(>|t|)    
+(Intercept)         9.80447    2.01771  4.8592 1.581e-06 ***
+results_weighted    7.93196    7.07177  1.1216   0.26256    
+agr_share_log       1.72372    0.22243  7.7496 5.203e-14 ***
+trade_openness_log -1.84955    0.27580 -6.7061 5.427e-11 ***
+cpi_log             0.14153    0.13546  1.0448   0.29661    
+edu_log             0.73431    0.34538  2.1261   0.03399 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    3612.6
+Residual Sum of Squares: 2945.2
+R-Squared:      0.18473
+Adj. R-Squared: 0.17656
+F-statistic: 22.614 on 5 and 499 DF, p-value: < 2.22e-16
+
+==============================
+Table A9. First stage Estimates of Shift-share IV on Dengue 
+==============================
+
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = dengue_cases_log ~ (hbs_olr_o) + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log, data = dengue_shift_share_pdata, 
+    model = "within")
+
+Unbalanced Panel: n = 31, T = 1-20, N = 505
+
+Residuals:
+    Min.  1st Qu.   Median  3rd Qu.     Max. 
+-5.88963 -0.58207  0.07347  0.69262  3.47518 
+
+Coefficients:
+                    Estimate Std. Error t-value  Pr(>|t|)    
+hbs_olr_o           0.094098   0.041937  2.2438  0.025311 *  
+agr_share_log      -1.195474   0.401976 -2.9740  0.003091 ** 
+trade_openness_log  0.032658   0.420417  0.0777  0.938116    
+cpi_log            -0.024569   0.096293 -0.2552  0.798718    
+edu_log             2.487844   0.427208  5.8235 1.071e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    894.44
+Residual Sum of Squares: 751.05
+R-Squared:      0.16032
+Adj. R-Squared: 0.097652
+F-statistic: 17.9086 on 5 and 469 DF, p-value: 2.8985e-16
+
+==============================
+Table A9. 2SLS Estimates of Dengue on TFP 
+==============================
+
+
+t test of coefficients:
+
+                                         Estimate Std. Error   t value  Pr(>|t|)    
+(Intercept)                            12.6832595  0.1179983  107.4868 < 2.2e-16 ***
+dengue_cases_log                       -0.0084793  0.0208000   -0.4077  0.683710    
+agr_share_log                          -0.0512018  0.0298857   -1.7133  0.087326 .  
+trade_openness_log                     -0.0054409  0.0186392   -0.2919  0.770489    
+cpi_log                                 0.0057500  0.0037937    1.5157  0.130275    
+edu_log                                 0.1694883  0.0523751    3.2360  0.001298 ** 
+factor(Country.Name)Barbados           -4.6055243  0.0367734 -125.2407 < 2.2e-16 ***
+factor(Country.Name)Bolivia            -2.2794707  0.1093786  -20.8402 < 2.2e-16 ***
+factor(Country.Name)Brazil              0.4328787  0.1742753    2.4839  0.013344 *  
+factor(Country.Name)Chile              -0.9127218  0.0618405  -14.7593 < 2.2e-16 ***
+factor(Country.Name)China               1.7269806  0.0720869   23.9569 < 2.2e-16 ***
+factor(Country.Name)Colombia           -0.7081560  0.1329080   -5.3282 1.544e-07 ***
+factor(Country.Name)Costa Rica         -1.9740588  0.1219963  -16.1813 < 2.2e-16 ***
+factor(Country.Name)Dominican Republic -1.6598479  0.0913492  -18.1704 < 2.2e-16 ***
+factor(Country.Name)Ecuador            -1.5793866  0.1090268  -14.4862 < 2.2e-16 ***
+factor(Country.Name)Fiji               -3.4276799  0.0660011  -51.9337 < 2.2e-16 ***
+factor(Country.Name)Guatemala          -1.8756094  0.1528058  -12.2745 < 2.2e-16 ***
+factor(Country.Name)Honduras           -2.6462090  0.1661049  -15.9310 < 2.2e-16 ***
+factor(Country.Name)India               0.9691698  0.1747690    5.5454 4.905e-08 ***
+factor(Country.Name)Indonesia           0.2658968  0.1786144    1.4887  0.137248    
+factor(Country.Name)Jamaica            -3.2276846  0.0196683 -164.1061 < 2.2e-16 ***
+factor(Country.Name)Lao PDR            -2.4933913  0.1859316  -13.4103 < 2.2e-16 ***
+factor(Country.Name)Mexico              0.3362511  0.1267997    2.6518  0.008277 ** 
+factor(Country.Name)Nicaragua          -2.8832732  0.1693240  -17.0281 < 2.2e-16 ***
+factor(Country.Name)Panama             -1.6136523  0.0667004  -24.1926 < 2.2e-16 ***
+factor(Country.Name)Paraguay           -2.2596388  0.1172902  -19.2654 < 2.2e-16 ***
+factor(Country.Name)Peru               -1.2204560  0.0976631  -12.4966 < 2.2e-16 ***
+factor(Country.Name)Philippines        -0.7368914  0.1524115   -4.8349 1.809e-06 ***
+factor(Country.Name)Spain               0.2345009  0.0996321    2.3537  0.019001 *  
+factor(Country.Name)Sri Lanka          -1.1836482  0.1680551   -7.0432 6.728e-12 ***
+factor(Country.Name)Sudan              -1.6181494  0.1634435   -9.9004 < 2.2e-16 ***
+factor(Country.Name)Suriname           -3.3861761  0.0710847  -47.6358 < 2.2e-16 ***
+factor(Country.Name)Thailand           -0.2631399  0.1553052   -1.6943  0.090865 .  
+factor(Country.Name)United States       1.8962877  0.0569487   33.2982 < 2.2e-16 ***
+factor(Country.Name)Uruguay            -2.1372231  0.0425725  -50.2019 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB      -4.1213476  0.1262273  -32.6502 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Running A10_robustness_HICs.R ...
+
+==============================
+Table A10. Unbalanced Panel Estimates of Malaria Impact on TFP in UMHICs 
+==============================
+
+
+==============================
+Table A10. First stage 
+==============================
+
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = case_incidence_log ~ (hbs_olr_o) + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log, data = HICs_shift_share_pdata, 
+    model = "within")
+
+Unbalanced Panel: n = 15, T = 1-19, N = 203
+
+Residuals:
+     Min.   1st Qu.    Median   3rd Qu.      Max. 
+-2.123201 -0.325167  0.044552  0.387476  1.655763 
+
+Coefficients:
+                    Estimate Std. Error t-value  Pr(>|t|)    
+hbs_olr_o           0.049978   0.038901  1.2847   0.20051    
+agr_share_log       2.331572   0.380243  6.1318 5.226e-09 ***
+trade_openness_log -0.854304   0.459009 -1.8612   0.06432 .  
+cpi_log             0.138839   0.070514  1.9690   0.05047 .  
+edu_log            -0.663226   0.308749 -2.1481   0.03302 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    105.19
+Residual Sum of Squares: 72.46
+R-Squared:      0.31118
+Adj. R-Squared: 0.23966
+F-statistic: 16.5342 on 5 and 183 DF, p-value: 1.8585e-13
+
+==============================
+Table A10. 2SLS 
+==============================
+
+
+Call:
+ivreg::ivreg(formula = tfp_log ~ case_incidence_log + agr_share_log + 
+    trade_openness_log + cpi_log + edu_log + factor(Country.Name) | 
+    (hbs_olr_o) + agr_share_log + trade_openness_log + cpi_log + 
+        edu_log + factor(Country.Name), data = HICs_shift_share_pdata)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.425221 -0.063924  0.004705  0.073687  0.353143 
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            15.80599    1.34979  11.710  < 2e-16 ***
+case_incidence_log                     -0.17710    0.14267  -1.241 0.216085    
+agr_share_log                           0.29996    0.34400   0.872 0.384355    
+trade_openness_log                     -0.19651    0.16118  -1.219 0.224337    
+cpi_log                                 0.01936    0.02271   0.853 0.394895    
+edu_log                                -0.07758    0.11708  -0.663 0.508407    
+factor(Country.Name)China               0.50985    1.01641   0.502 0.616539    
+factor(Country.Name)Colombia           -1.25402    0.05912 -21.210  < 2e-16 ***
+factor(Country.Name)Costa Rica         -3.56491    0.61188  -5.826 2.51e-08 ***
+factor(Country.Name)Dominican Republic -2.96794    0.46055  -6.444 9.99e-10 ***
+factor(Country.Name)Ecuador            -2.57138    0.29213  -8.802 9.99e-16 ***
+factor(Country.Name)Gabon              -3.06676    0.47934  -6.398 1.28e-09 ***
+factor(Country.Name)Guatemala          -3.26729    0.51020  -6.404 1.24e-09 ***
+factor(Country.Name)Indonesia          -0.50955    0.38552  -1.322 0.187908    
+factor(Country.Name)Namibia            -3.84156    0.12297 -31.240  < 2e-16 ***
+factor(Country.Name)Panama             -2.60172    0.20495 -12.694  < 2e-16 ***
+factor(Country.Name)Peru               -1.83221    0.09878 -18.548  < 2e-16 ***
+factor(Country.Name)South Africa       -1.06487    0.13475  -7.902 2.48e-13 ***
+factor(Country.Name)Suriname           -4.56406    0.13932 -32.761  < 2e-16 ***
+factor(Country.Name)Thailand           -0.99785    0.27166  -3.673 0.000314 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1153 on 183 degrees of freedom
+Multiple R-Squared: 0.9944,	Adjusted R-squared: 0.9938 
+Wald test:  1714 on 19 and 183 DF,  p-value: < 2.2e-16 
+
+Running A11_robustness_two_sample_MR.R ...
+
+==============================
+Table A11. Two-Sample Mendelian Randomisation Estimates 
+==============================
+
+Mean first-stage (shiftshare → malaria): 0.205438 
+Standard error (first-stage): 0.07673012 
+95% CI (first-stage): 0.1287303 to 0.4134739 
+
+Mean second-stage (shiftshare → TFP): -0.04481831 
+Standard error (second-stage): 0.0256998 
+95% CI (second-stage): -0.1121783 to -0.0008357066 
+
+Mean Wald estimate: -0.2463936 
+Standard error (Wald): 0.174804 
+95% CI (Wald): -0.6880863 to -0.004266857 
+
+Running A12_robustness_institutional_quality.R ...
+
+==============================
+Table A12. Controlling for Institutional Quality 
+==============================
+
+
+==============================
+Table A12. Control of corruption (cc) 
+==============================
+
+
+t test of coefficients:
+
+                                              Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  12.537030   0.389721  32.1693 < 2.2e-16 ***
+case_incidence_log                           -0.116498   0.037366  -3.1178 0.0019549 ** 
+agr_share_log                                -0.089146   0.027300  -3.2655 0.0011877 ** 
+trade_openness_log                           -0.053184   0.022590  -2.3543 0.0190458 *  
+cpi_log                                      -0.021823   0.005726  -3.8112 0.0001602 ***
+edu_log                                       0.028508   0.010593   2.6913 0.0074179 ** 
+cc                                            0.074546   0.021900   3.4039 0.0007320 ***
+factor(Country.Name)Benin                    -1.301678   0.051770 -25.1437 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.962110   0.159744  -6.0228 3.910e-09 ***
+factor(Country.Name)Burkina Faso             -1.277430   0.053229 -23.9987 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.420768   0.057070 -42.4172 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.698942   0.035893 -19.4730 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.589164   0.062368 -41.5143 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.483677   0.052452 -28.2866 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.467805   0.040721 -11.4880 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.510600   0.114403 -21.9452 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.904731   0.204534  -9.3125 < 2.2e-16 ***
+factor(Country.Name)Guinea                   -1.181188   0.040171 -29.4038 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -1.405452   0.209022  -6.7239 6.177e-11 ***
+factor(Country.Name)India                     1.271735   0.119722  10.6224 < 2.2e-16 ***
+factor(Country.Name)Kenya                    -0.422796   0.057613  -7.3386 1.229e-12 ***
+factor(Country.Name)Lao PDR                  -1.073370   0.120243  -8.9267 < 2.2e-16 ***
+factor(Country.Name)Mauritania               -1.098274   0.074684 -14.7057 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.581906   0.204782  -7.7248 9.235e-14 ***
+factor(Country.Name)Niger                    -1.822057   0.059810 -30.4640 < 2.2e-16 ***
+factor(Country.Name)Philippines              -0.062839   0.213675  -0.2941 0.7688443    
+factor(Country.Name)Rwanda                   -1.648721   0.064510 -25.5577 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -1.191644   0.073042 -16.3146 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.619167   0.061083 -26.5078 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                -0.384554   0.250379  -1.5359 0.1253620    
+factor(Country.Name)Sudan                    -0.197033   0.087439  -2.2534 0.0247802 *  
+factor(Country.Name)Tanzania                 -0.811745   0.056868 -14.2741 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.940717   0.047126 -41.1814 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.885020   0.134342 -21.4753 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -0.968400   0.036184 -26.7630 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.338517   0.050574 -26.4663 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A12. Rule of law (rl) 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  12.6002433  0.4157626  30.3063 < 2.2e-16 ***
+case_incidence_log                           -0.1218900  0.0390172  -3.1240 0.0019150 ** 
+agr_share_log                                -0.0824952  0.0274376  -3.0066 0.0028094 ** 
+trade_openness_log                           -0.0298972  0.0226079  -1.3224 0.1867889    
+cpi_log                                      -0.0200314  0.0056533  -3.5433 0.0004421 ***
+edu_log                                       0.0141962  0.0125990   1.1268 0.2605200    
+rl                                            0.1488846  0.0308222   4.8304 1.949e-06 ***
+factor(Country.Name)Benin                    -1.3521400  0.0539146 -25.0793 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.9589929  0.1695085  -5.6575 2.944e-08 ***
+factor(Country.Name)Burkina Faso             -1.3238810  0.0491416 -26.9401 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.4324015  0.0564713 -43.0732 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.6990335  0.0332571 -21.0191 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.5270779  0.0588182 -42.9642 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.4904184  0.0528727 -28.1888 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.4577961  0.0348437 -13.1386 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.5401451  0.1227313 -20.6968 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.9555826  0.2237325  -8.7407 < 2.2e-16 ***
+factor(Country.Name)Guinea                   -1.1577443  0.0370822 -31.2210 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -1.4419500  0.2221655  -6.4904 2.556e-10 ***
+factor(Country.Name)India                     1.1539267  0.1412424   8.1698 4.171e-15 ***
+factor(Country.Name)Kenya                    -0.4616908  0.0619638  -7.4510 5.845e-13 ***
+factor(Country.Name)Lao PDR                  -1.1131309  0.1274519  -8.7337 < 2.2e-16 ***
+factor(Country.Name)Mauritania               -1.1350262  0.0817729 -13.8802 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.6365953  0.2201256  -7.4348 6.507e-13 ***
+factor(Country.Name)Niger                    -1.8979555  0.0670567 -28.3037 < 2.2e-16 ***
+factor(Country.Name)Philippines              -0.1350492  0.2318111  -0.5826 0.5605047    
+factor(Country.Name)Rwanda                   -1.6724119  0.0663928 -25.1896 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -1.2786897  0.0871515 -14.6720 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.6440930  0.0592243 -27.7604 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                -0.5481635  0.2807352  -1.9526 0.0515694 .  
+factor(Country.Name)Sudan                    -0.1815371  0.0841286  -2.1579 0.0315385 *  
+factor(Country.Name)Tanzania                 -0.8916445  0.0668276 -13.3425 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.9770241  0.0462197 -42.7745 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.7970734  0.1325399 -21.1036 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -1.0274969  0.0346544 -29.6498 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.3015856  0.0469766 -27.7071 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A12. Regulatory quality (rq) 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  12.5019848  0.3899544  32.0601 < 2.2e-16 ***
+case_incidence_log                           -0.1154803  0.0371386  -3.1094 0.0020096 ** 
+agr_share_log                                -0.0888413  0.0281110  -3.1604 0.0016964 ** 
+trade_openness_log                           -0.0505684  0.0229144  -2.2068 0.0278974 *  
+cpi_log                                      -0.0205355  0.0057186  -3.5910 0.0003707 ***
+edu_log                                       0.0295229  0.0108885   2.7114 0.0069913 ** 
+rq                                            0.0884638  0.0262588   3.3689 0.0008285 ***
+factor(Country.Name)Benin                    -1.2923981  0.0525568 -24.5905 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.9322742  0.1608330  -5.7965 1.382e-08 ***
+factor(Country.Name)Burkina Faso             -1.2574920  0.0487095 -25.8162 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.4054981  0.0588661 -40.8639 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.6971989  0.0351925 -19.8110 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.5479257  0.0632600 -40.2770 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.4806902  0.0526518 -28.1223 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.4592463  0.0400518 -11.4663 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.4918985  0.1148578 -21.6955 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.8719811  0.2069050  -9.0475 < 2.2e-16 ***
+factor(Country.Name)Guinea                   -1.1666144  0.0389914 -29.9198 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -1.4274290  0.2145630  -6.6527 9.564e-11 ***
+factor(Country.Name)India                     1.2839059  0.1215986  10.5586 < 2.2e-16 ***
+factor(Country.Name)Kenya                    -0.4616068  0.0627155  -7.3603 1.065e-12 ***
+factor(Country.Name)Lao PDR                  -1.0490012  0.1194305  -8.7834 < 2.2e-16 ***
+factor(Country.Name)Mauritania               -1.0846600  0.0752393 -14.4161 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.5836169  0.2064426  -7.6710 1.333e-13 ***
+factor(Country.Name)Niger                    -1.8093607  0.0615564 -29.3935 < 2.2e-16 ***
+factor(Country.Name)Philippines              -0.0908068  0.2185977  -0.4154 0.6780690    
+factor(Country.Name)Rwanda                   -1.5963134  0.0599237 -26.6391 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -1.1720854  0.0743148 -15.7719 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.5959827  0.0590301 -27.0368 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                -0.3780452  0.2501316  -1.5114 0.1314860    
+factor(Country.Name)Sudan                    -0.1622594  0.0846702  -1.9164 0.0560356 .  
+factor(Country.Name)Tanzania                 -0.7992633  0.0571952 -13.9743 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.9216836  0.0463824 -41.4313 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.8324251  0.1313022 -21.5718 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -0.9486286  0.0309870 -30.6138 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.2750561  0.0493253 -25.8499 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+==============================
+Table A12. All factors (cc,rl,rq) 
+==============================
+
+
+t test of coefficients:
+
+                                               Estimate Std. Error  t value  Pr(>|t|)    
+(Intercept)                                  12.6343469  0.4055848  31.1509 < 2.2e-16 ***
+case_incidence_log                           -0.1228031  0.0387539  -3.1688 0.0016499 ** 
+agr_share_log                                -0.0826624  0.0273864  -3.0184 0.0027061 ** 
+trade_openness_log                           -0.0317826  0.0230463  -1.3791 0.1686505    
+cpi_log                                      -0.0197402  0.0056589  -3.4884 0.0005407 ***
+edu_log                                       0.0138612  0.0124983   1.1090 0.2680845    
+cc                                            0.0152896  0.0298927   0.5115 0.6092973    
+rl                                            0.1373157  0.0381223   3.6020 0.0003561 ***
+rq                                            0.0099445  0.0317712   0.3130 0.7544435    
+factor(Country.Name)Benin                    -1.3601923  0.0528719 -25.7262 < 2.2e-16 ***
+factor(Country.Name)Bolivia                  -0.9718352  0.1660850  -5.8514 1.024e-08 ***
+factor(Country.Name)Burkina Faso             -1.3387209  0.0508252 -26.3397 < 2.2e-16 ***
+factor(Country.Name)Burundi                  -2.4355719  0.0552968 -44.0454 < 2.2e-16 ***
+factor(Country.Name)Cameroon                 -0.7021170  0.0337737 -20.7889 < 2.2e-16 ***
+factor(Country.Name)Central African Republic -2.5319165  0.0608074 -41.6383 < 2.2e-16 ***
+factor(Country.Name)Chad                     -1.4902451  0.0527919 -28.2287 < 2.2e-16 ***
+factor(Country.Name)Cote d'Ivoire            -0.4655615  0.0366715 -12.6954 < 2.2e-16 ***
+factor(Country.Name)Djibouti                 -2.5489712  0.1220006 -20.8931 < 2.2e-16 ***
+factor(Country.Name)Eswatini                 -1.9759403  0.2176460  -9.0787 < 2.2e-16 ***
+factor(Country.Name)Guinea                   -1.1628007  0.0388357 -29.9416 < 2.2e-16 ***
+factor(Country.Name)Honduras                 -1.4569963  0.2189891  -6.6533 9.586e-11 ***
+factor(Country.Name)India                     1.1444307  0.1381025   8.2868 1.834e-15 ***
+factor(Country.Name)Kenya                    -0.4702996  0.0627497  -7.4948 4.402e-13 ***
+factor(Country.Name)Lao PDR                  -1.1156243  0.1265467  -8.8159 < 2.2e-16 ***
+factor(Country.Name)Mauritania               -1.1450199  0.0795778 -14.3887 < 2.2e-16 ***
+factor(Country.Name)Nicaragua                -1.6495582  0.2166341  -7.6145 1.972e-13 ***
+factor(Country.Name)Niger                    -1.9049668  0.0655269 -29.0715 < 2.2e-16 ***
+factor(Country.Name)Philippines              -0.1512374  0.2280053  -0.6633 0.5075212    
+factor(Country.Name)Rwanda                   -1.6933735  0.0661809 -25.5870 < 2.2e-16 ***
+factor(Country.Name)Senegal                  -1.2928843  0.0837432 -15.4387 < 2.2e-16 ***
+factor(Country.Name)Sierra Leone             -1.6489829  0.0598635 -27.5457 < 2.2e-16 ***
+factor(Country.Name)Sri Lanka                -0.5629242  0.2764963  -2.0359 0.0424252 *  
+factor(Country.Name)Sudan                    -0.1817609  0.0844506  -2.1523 0.0319809 *  
+factor(Country.Name)Tanzania                 -0.9007761  0.0645909 -13.9459 < 2.2e-16 ***
+factor(Country.Name)Togo                     -1.9800514  0.0461490 -42.9056 < 2.2e-16 ***
+factor(Country.Name)Venezuela, RB            -2.8032609  0.1317378 -21.2791 < 2.2e-16 ***
+factor(Country.Name)Zambia                   -1.0351436  0.0352572 -29.3598 < 2.2e-16 ***
+factor(Country.Name)Zimbabwe                 -1.2989328  0.0517057 -25.1216 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Running A13_causal_mediation_hci.R ...
+
+==============================
+Table A13. Causal Mediation Analysis 
+==============================
+
+
+==============================
+Table A13. Mediator: HCI 
+==============================
+
+
+Causal Mediation Analysis 
+
+Quasi-Bayesian Confidence Intervals
+
+                 Estimate 95% CI Lower 95% CI Upper p-value    
+ACME           -0.0470085   -0.0666108   -0.0298083  <2e-16 ***
+ADE            -0.0402503   -0.0713859   -0.0083034   0.014 *  
+Total Effect   -0.0872588   -0.1219920   -0.0544800  <2e-16 ***
+Prop. Mediated  0.5363846    0.3318728    0.8462033  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 424 
+
+
+Simulations: 1000 
+
+Running A13_causal_mediation_life_expectancy.R ...
+
+==============================
+Table A13. Mediator: Life expectancy 
+==============================
+
+
+Causal Mediation Analysis 
+
+Quasi-Bayesian Confidence Intervals
+
+                Estimate 95% CI Lower 95% CI Upper p-value    
+ACME           -0.034886    -0.052833    -0.019118  <2e-16 ***
+ADE            -0.040836    -0.072190    -0.010627   0.012 *  
+Total Effect   -0.075723    -0.110241    -0.041607  <2e-16 ***
+Prop. Mediated  0.458552     0.266483     0.789341  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Sample Size Used: 455 
+
+
+Simulations: 1000 
+
+Running A14_auxiliary_check_age_group.R ...
+
+==============================
+Table A14. Auxiliary consistency checks 
+==============================
+
+
+==============================
+Table A14. Share of children under 5 
+==============================
+
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = tfp_log ~ case_incidence_log + under_5_child_share_interaction + 
+    agr_share_log + trade_openness_log + cpi_log + edu_log, data = tfp_data_under_5_children_interaction_analysis, 
+    model = "within", index = c("Country.Code", "year"))
+
+Unbalanced Panel: n = 30, T = 6-19, N = 455
+
+Residuals:
+       Min.     1st Qu.      Median     3rd Qu.        Max. 
+-0.23090302 -0.04662207 -0.00077412  0.04289021  0.25695906 
+
+Coefficients:
+                                  Estimate Std. Error  t-value  Pr(>|t|)    
+case_incidence_log              -0.1295936  0.0126492 -10.2452 < 2.2e-16 ***
+under_5_child_share_interaction -0.0621691  0.0072524  -8.5722 < 2.2e-16 ***
+agr_share_log                   -0.0627366  0.0232461  -2.6988   0.00724 ** 
+trade_openness_log              -0.0471259  0.0180997  -2.6037   0.00955 ** 
+cpi_log                         -0.0207563  0.0044520  -4.6623  4.21e-06 ***
+edu_log                          0.0083771  0.0095361   0.8785   0.38020    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    3.7276
+Residual Sum of Squares: 2.2684
+R-Squared:      0.39146
+Adj. R-Squared: 0.34062
+F-statistic: 44.9217 on 6 and 419 DF, p-value: < 2.22e-16
+
+==============================
+Table A14. Share of children from 0 to 14 years old 
+==============================
+
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = tfp_log ~ case_incidence_log + lag_child_interaction + 
+    agr_share_log + trade_openness_log + cpi_log + edu_log, data = tfp_data_child_interaction_analysis, 
+    model = "within", index = c("Country.Code", "year"))
+
+Unbalanced Panel: n = 30, T = 2-14, N = 340
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.1894608 -0.0348187 -0.0033384  0.0283336  0.2671971 
+
+Coefficients:
+                         Estimate  Std. Error t-value  Pr(>|t|)    
+case_incidence_log    -0.02323165  0.00920280 -2.5244  0.012098 *  
+lag_child_interaction -0.00093162  0.00022883 -4.0713 5.968e-05 ***
+agr_share_log         -0.05637770  0.02765268 -2.0388  0.042337 *  
+trade_openness_log    -0.04828247  0.02380888 -2.0279  0.043440 *  
+cpi_log               -0.01586518  0.00510245 -3.1093  0.002053 ** 
+edu_log                0.00924496  0.01333010  0.6935  0.488500    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    1.9324
+Residual Sum of Squares: 1.5329
+R-Squared:      0.20674
+Adj. R-Squared: 0.11541
+F-statistic: 13.2046 on 6 and 304 DF, p-value: 2.7233e-13
+
+==============================
+Table A14. Primary school completion rate 
+==============================
+
+Oneway (individual) effect Within Model
+
+Call:
+plm(formula = tfp_log ~ case_incidence_log + lag_edu_interaction_9 + 
+    agr_share_log + trade_openness_log + cpi_log + primary_completion_log + 
+    edu_log, data = tfp_data_edu_interaction_analysis, model = "within", 
+    index = c("Country.Code", "year"))
+
+Unbalanced Panel: n = 28, T = 2-10, N = 237
+
+Residuals:
+      Min.    1st Qu.     Median    3rd Qu.       Max. 
+-0.1820342 -0.0344188 -0.0022638  0.0313425  0.2857721 
+
+Coefficients:
+                         Estimate Std. Error t-value  Pr(>|t|)    
+case_incidence_log     -0.0320605  0.0136496 -2.3488   0.01980 *  
+lag_edu_interaction_9  -0.0046344  0.0022707 -2.0409   0.04256 *  
+agr_share_log          -0.0138871  0.0331485 -0.4189   0.67571    
+trade_openness_log     -0.0698609  0.0286031 -2.4424   0.01545 *  
+cpi_log                -0.0275549  0.0062036 -4.4418 1.469e-05 ***
+primary_completion_log  0.1305946  0.0509303  2.5642   0.01107 *  
+edu_log                 0.0307204  0.0186152  1.6503   0.10044    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Total Sum of Squares:    1.0817
+Residual Sum of Squares: 0.84686
+R-Squared:      0.21711
+Adj. R-Squared: 0.08534
+F-statistic: 8.00276 on 7 and 202 DF, p-value: 1.4185e-08
