@@ -1,6 +1,3 @@
-# macro_malaria
-Examining the impact of malaria case incidence on total factor productivity leveraging a panel dataset covering 30 malaria-endemic countries from 2000 to 2019
-
 # Replication Package for Estimating the impact of Malaria on Total Factor Productivity
 
 This repository contains the replication code for the malaria–TFP analysis.  
