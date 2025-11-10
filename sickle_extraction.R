@@ -37,7 +37,7 @@ countries_all <- lapply(c(all_country_code),
   unlist()
 
 # import MAP raster file
-
+# downloaded from: https://data.malariaatlas.org/maps?layers=Blood_Disorders:201201_Global_Sickle_Haemoglobin_HbS_Allele_Frequency,Malaria:202508_Global_Pf_Parasite_Rate
 sickle_file_path <- data_path("2013_Sickle_Haemoglobin_HbS_Allele_Freq_Global_5k_Decompressed","2013_Sickle_Haemoglobin_HbS_Allele_Freq_Global_5k_Decompressed.geotiff")
 sickle <- raster(sickle_file_path)
 crs(sickle)

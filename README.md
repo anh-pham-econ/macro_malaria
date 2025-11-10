@@ -169,6 +169,9 @@ These scripts are not strictly required to run the main replication but are incl
 - **`sickle_extraction.R`**  
   - Extracts sickle cell (HbS) allele frequency data from raster / geospatial layers and aggregates it to the units used in the analysis (e.g. country-year or similar).  
   - Requires spatial and raster libraries: `sf`, `geodata`, `exactextractr`, `terra`, `raster`, plus `tidyverse`.
+  - The raster datasets required for extracting sickle cell frequency distributions are too large to be uploaded to GitHub. However, they can be freely downloaded from the official sources specified in the script. Researchers replicating this part of the analysis should manually download these datasets from the links given and place them in the appropriate Data/ subdirectory before running sickle_extraction.R.
+
+If access difficulties arise, the author is happy to provide these files upon reasonable request.
 
 - **`gfcf_to_capital.R`**  
   - Converts gross fixed capital formation (GFCF) time series into a capital stock series using a perpetual inventory or related method.  
