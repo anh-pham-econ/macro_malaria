@@ -160,7 +160,9 @@ The master script executes the following scripts in order:
 
 11. **`A14_auxiliary_check_age_group.R`**  
    - Auxiliary checks by age group (e.g. focusing on child vs adult malaria exposure) to explore heterogeneity in effects.
-
+     
+Each R file (e.g. data_processing.R, main_analysis.R, A7_robustness_WDI_data_analysis.R,...) can also be executed independently outside the master script.
+To do so, you need to uncomment and edit the header in each script to load required packages, set up directories, and define paths. This ensures that packages, file paths and dependencies are correctly initialized when running any script individually.
 ---
 
 ## 5. Additional (Standalone) Scripts
