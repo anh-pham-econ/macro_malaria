@@ -24,6 +24,14 @@ malaria_data <- data %>%
   filter(all(2001:2019 %in% year)) %>%
   ungroup()
 
+high_incidence_countries <- malaria_data %>%
+  group_by(Country.Name) %>%
+  summarise(mean_inc = mean(case_incidence, na.rm = TRUE)) %>%
+  filter(mean_inc > 38000)
+
+n_colors <- nrow(high_incidence_countries) + 1
+vir_cols <- viridis(n_colors, option = "C")
+
 fig1_malaria_cases <- ggplot(malaria_data,
                              aes(x = year,
                                  y = case_incidence,
@@ -38,7 +46,8 @@ fig1_malaria_cases <- ggplot(malaria_data,
     y = "Cases per 100,000 population at risk",
     color = NULL
   ) +
-  scale_color_viridis_d(option = "C") +
+  #scale_color_viridis_d(option = "C") + 
+  scale_color_manual(values = vir_cols) +
   theme_classic(base_size = 12) +
   theme(
     legend.position = "bottom"
@@ -372,6 +381,7 @@ fig11_tfps
 # )
 
 cat("\nScripts completed successfully.\n")
+
 
 
 
